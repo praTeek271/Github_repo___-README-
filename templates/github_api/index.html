@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GitHub Repositories</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .repo-box {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        padding: 20px;
+        overflow: hidden;
+        width: calc(100% - 200px);
+        text-align: start;
+        position: relative;
+      }
+      .repo-box a {
+        text-decoration: none;
+        color: #333;
+        left: 80%;
+        position: absolute;
+      }
+      .repo-box:hover > a {
+        color: #000;
+      }
+      .repo-box:hover {
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+      }
+      nav {
+        background-color: #fff;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 8px;
+        margin-bottom: 44px;
+      }
+      nav img {
+        border-radius: 50%;
+        border: 2px dashed black;
+        padding: 3px;
+      }
+      nav .gitname {
+        position: absolute;
+        right: 10px;
+        top: 6%;
+        transform: translateY(-50%);
+        font-weight: bold;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>
+        {% comment %} "); {% endcomment %}
+        <a href="{{repo_img_url}}" target="_blank" style="text-decoration: none">
+        <img src="{{repo_img_url}}" alt="Profile Image" width="50" height="50"/>
+      </a>
+        <div class="gitname">
+          <a
+            href="https://github.com/{{github_username}}"
+            style="text-decoration: none; color: darkgray"
+            >{{ github_username }}</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      {% for repo in repos %}
+      <div class="repo-box">
+        <h2>{{ repo.name }}</h2>
+        <a
+          href="{% url 'readme_data' github_username=github_username repo_name=repo.name %}"
+          >View README</a
+        >
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>
