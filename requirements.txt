@@ -28,17 +28,12 @@ packaging
 pexpect
 pkginfo
 platformdirs
-poetry
-poetry-core
-poetry-plugin-export
 ptyprocess
 pyproject_hooks
 pywin32-ctypes
 rapidfuzz
 referencing
 requests
-requests-toolbelt
-rpds-py
 shellingham
 six
 sqlparse
