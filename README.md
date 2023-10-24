@@ -10,15 +10,15 @@ This Django web application allows you to extract and display README files from 
 
 ## Demo
 
-Check out the live demo of the application: [https://github-repo-readme.onrender.com/warriorwizard/](https://github-repo-readme.onrender.com/)
+Check out the live demo of the application: [https://github-repo-readme.onrender.com](https://github-repo-readme.onrender.com/)
 
 ## Setup
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/django-github-readme.git
-   cd django-github-readme
+   git clone https://github.com/praTeek271/Github_repo___-README-.git
+   cd Github_repo___-README-
 
 2. Install dependencies:
 
@@ -62,8 +62,3 @@ Contributions are welcome! Fork the repository and create a pull request with yo
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-```
-
-Replace placeholders like `your-username` with your GitHub username and update sections like "Features," "Setup," and "Usage" with information specific to your project.
-
-Once you've customized the README file, you can create a new repository on GitHub, push your code to it, and include the README file in the repository. Your GitHub project will have a clear and informative README that explains the purpose, usage, and other relevant details of your Django GitHub README Extractor project.
