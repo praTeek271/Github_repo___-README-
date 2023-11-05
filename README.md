@@ -32,7 +32,7 @@ Check out the live demo of the application: [https://github-repo-readme.onrender
    python manage.py runserver
    ```
 
-4. Access the application in your browser at `http://127.0.0.1:8000/github-username/`
+4. Access the application in your browser at `http://127.0.0.1:8000/<github-username>/`
 
 ## Usage
 
